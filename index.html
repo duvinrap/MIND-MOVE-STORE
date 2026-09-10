@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MIND MOVE — Games, Apps & Digital Store</title>
+
+    <meta name="description"
+        content="MIND MOVE is a creative technology brand for games, apps and digital experiences.">
+
+    <meta name="keywords"
+        content="Mind Move, games, apps, AI, game development, digital store">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        MIND <span>MOVE</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#games">Games</a>
+        <a href="#apps">Apps</a>
+        <a href="#store">Store</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">WELCOME TO MIND MOVE</p>
+
+        <h1>
+            THINK.<br>
+            CREATE.<br>
+            <span>MOVE.</span>
+        </h1>
+
+        <p class="hero-text">
+            Games, apps and digital experiences created
+            with imagination and technology.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#games" class="btn primary">
+                Explore Games
+            </a>
+
+            <a href="#store" class="btn secondary">
+                Open Store
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="brand-card">
+
+        <div class="brand-mark">M</div>
+
+        <h2>MIND MOVE</h2>
+
+        <p>GAMES • APPS • DIGITAL</p>
+
+    </div>
+
+</section>
+
+
+<!-- SEARCH -->
+
+<section class="search-section">
+
+    <div class="search-box">
+
+        <span>⌕</span>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search games, apps or products..."
+        >
+
+    </div>
+
+</section>
+
+
+<!-- GAMES -->
+
+<section class="section" id="games">
+
+    <div class="section-heading">
+
+        <p>DISCOVER</p>
+
+        <h2>Games</h2>
+
+        <span>Stories that become worlds.</span>
+
+    </div>
+
+
+    <div class="product-grid" id="gamesGrid">
+
+
+        <article class="product-card searchable"
+            data-name="Island Survival"
+            data-category="game survival adventure">
+
+            <div class="product-visual survival">
+
+                <span>COMING SOON</span>
+
+            </div>
+
+            <div class="product-body">
+
+                <small>GAME • SURVIVAL • ADVENTURE</small>
+
+                <h3>Island Survival</h3>
+
+                <p>
+                    Four friends. One mysterious island.
+                    Survive the dangers and find a way home.
+                </p>
+
+                <button
+                    onclick="showMessage('Island Survival is coming soon!')">
+                    Coming Soon
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article class="product-card searchable"
+            data-name="Future Game"
+            data-category="game adventure">
+
+            <div class="product-visual future">
+
+                <span>PROJECT</span>
+
+            </div>
+
+            <div class="product-body">
+
+                <small>GAME • ADVENTURE</small>
+
+                <h3>Future Game</h3>
+
+                <p>
+                    A new MIND MOVE game is currently
+                    being developed.
+                </p>
+
+                <button
+                    onclick="showMessage('More information coming soon!')">
+                    Stay Tuned
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- APPS -->
+
+<section class="section dark" id="apps">
+
+    <div class="section-heading">
+
+        <p>CREATE</p>
+
+        <h2>Apps</h2>
+
+        <span>Technology made for creators.</span>
+
+    </div>
+
+
+    <div class="app-card searchable"
+        data-name="THE ADOP"
+        data-category="app ai game development">
+
+        <div class="app-logo">
+            A
+        </div>
+
+        <div class="app-details">
+
+            <small>AI • GAME DEVELOPMENT</small>
+
+            <h3>THE ADOP</h3>
+
+            <p>
+                An AI-powered tool designed to help turn
+                game ideas and stories into game projects.
+            </p>
+
+            <div class="buttons">
+
+                <button
+                    onclick="showMessage('THE ADOP will be available here soon!')">
+                    Download
+                </button>
+
+                <button
+                    class="outline"
+                    onclick="showMessage('THE ADOP information page is coming soon!')">
+                    Learn More
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STORE -->
+
+<section class="section" id="store">
+
+    <div class="section-heading">
+
+        <p>SHOP</p>
+
+        <h2>MIND MOVE Store</h2>
+
+        <span>Everything created by MIND MOVE.</span>
+
+    </div>
+
+
+    <div class="store-grid">
+
+
+        <article class="store-item searchable"
+            data-name="Island Survival"
+            data-category="game">
+
+            <div class="store-icon">🎮</div>
+
+            <small>GAME</small>
+
+            <h3>Island Survival</h3>
+
+            <p>Coming Soon</p>
+
+            <button
+                onclick="showMessage('Island Survival is not released yet.')">
+                View Product
+            </button>
+
+        </article>
+
+
+        <article class="store-item searchable"
+            data-name="THE ADOP"
+            data-category="app ai">
+
+            <div class="store-icon">🤖</div>
+
+            <small>APP</small>
+
+            <h3>THE ADOP</h3>
+
+            <p>Coming Soon</p>
+
+            <button
+                onclick="showMessage('THE ADOP download will be added after release.')">
+                View Product
+            </button>
+
+        </article>
+
+
+        <article class="store-item searchable"
+            data-name="Digital Products"
+            data-category="digital">
+
+            <div class="store-icon">✦</div>
+
+            <small>DIGITAL</small>
+
+            <h3>Future Products</h3>
+
+            <p>Coming Soon</p>
+
+            <button
+                onclick="showMessage('More MIND MOVE products are coming soon.')">
+                View Product
+            </button>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section about" id="about">
+
+    <div>
+
+        <p class="eyebrow">ABOUT MIND MOVE</p>
+
+        <h2>
+            Ideas become<br>
+            <span>experiences.</span>
+        </h2>
+
+        <p>
+            MIND MOVE is a creative technology brand focused
+            on games, applications and digital experiences.
+        </p>
+
+        <p>
+            We turn ideas, stories and imagination into
+            things people can experience.
+        </p>
+
+    </div>
+
+
+    <div class="about-mark">
+
+        <strong>MIND</strong>
+
+        <span>+</span>
+
+        <strong>MOVE</strong>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="section dark" id="contact">
+
+    <div class="section-heading">
+
+        <p>CONTACT</p>
+
+        <h2>Let's Connect</h2>
+
+        <span>Have an idea or feedback?</span>
+
+    </div>
+
+
+    <!-- FORMSPREE FORM -->
+
+    <form
+        class="contact-form"
+        id="contactForm"
+        action="https://formspree.io/f/xrpgjqpg"
+        method="POST"
+    >
+
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+            required
+        >
+
+        <select
+            id="rating"
+            name="rating"
+        >
+
+            <option value="">
+                Your Rating
+            </option>
+
+            <option value="5 - Excellent">
+                ★★★★★ Excellent
+            </option>
+
+            <option value="4 - Great">
+                ★★★★ Great
+            </option>
+
+            <option value="3 - Good">
+                ★★★ Good
+            </option>
+
+            <option value="2 - Okay">
+                ★★ Okay
+            </option>
+
+            <option value="1 - Needs Improvement">
+                ★ Needs Improvement
+            </option>
+
+        </select>
+
+
+        <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Write your feedback, idea or suggestion..."
+            required
+        ></textarea>
+
+
+        <input
+            type="hidden"
+            name="_subject"
+            value="MIND MOVE Store — New Feedback"
+        >
+
+
+        <button
+            type="submit"
+            class="btn primary"
+            id="submitBtn"
+        >
+            Send Feedback →
+        </button>
+
+    </form>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-logo">
+        MIND MOVE
+    </div>
+
+    <p>Think. Create. Move.</p>
+
+    <div class="footer-links">
+
+        <a href="#home">Home</a>
+        <a href="#games">Games</a>
+        <a href="#apps">Apps</a>
+        <a href="#store">Store</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 MIND MOVE. All rights reserved.
+    </div>
+
+</footer>
+
+
+<!-- POPUP -->
+
+<div class="popup" id="popup">
+
+    <div class="popup-box">
+
+        <div class="popup-icon">✓</div>
+
+        <p id="popupText"></p>
+
+        <button onclick="closePopup()">
+            OK
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
