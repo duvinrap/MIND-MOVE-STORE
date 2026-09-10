@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MIND MOVE — Games, Apps & Digital</title>
+    <meta name="description" content="MIND MOVE — Games, Apps and Digital Experiences.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="logo">
+            <span>MIND</span> MOVE
+        </div>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#apps">Apps</a>
+            <a href="#store">Store</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="small-title">WELCOME TO MIND MOVE</p>
+
+                <h1>
+                    Think.<br>
+                    Create.<br>
+                    <span>Move.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Games, apps and digital experiences created
+                    with imagination and technology.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#games" class="btn primary">Explore Games</a>
+                    <a href="#store" class="btn secondary">Visit Store</a>
+                </div>
+
+            </div>
+
+            <div class="hero-card">
+                <div class="hero-symbol">M</div>
+                <h2>MIND MOVE</h2>
+                <p>Games • Apps • Digital</p>
+            </div>
+
+        </section>
+
+
+        <!-- GAMES -->
+        <section class="section" id="games">
+
+            <div class="section-heading">
+                <p>DISCOVER</p>
+                <h2>Our Games</h2>
+                <span>Stories that become worlds.</span>
+            </div>
+
+            <div class="cards">
+
+                <article class="card featured-game">
+
+                    <div class="card-image game-image">
+                        <div class="image-label">COMING SOON</div>
+                    </div>
+
+                    <div class="card-content">
+                        <span class="category">SURVIVAL • ADVENTURE</span>
+
+                        <h3>Island Survival</h3>
+
+                        <p>
+                            Four friends. One mysterious island.
+                            Survive the dangers, discover the secrets
+                            and find a way home.
+                        </p>
+
+                        <button class="card-btn" onclick="showMessage('Island Survival is coming soon!')">
+                            Coming Soon
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="card-image mystery-image">
+                        <div class="image-label">NEW WORLD</div>
+                    </div>
+
+                    <div class="card-content">
+                        <span class="category">ADVENTURE</span>
+
+                        <h3>Future Project</h3>
+
+                        <p>
+                            A new world is being created by MIND MOVE.
+                            More details will be revealed soon.
+                        </p>
+
+                        <button class="card-btn" onclick="showMessage('This game will be announced soon!')">
+                            Stay Tuned
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- APPS -->
+        <section class="section dark-section" id="apps">
+
+            <div class="section-heading">
+                <p>TOOLS</p>
+                <h2>Our Apps</h2>
+                <span>Technology made for creators.</span>
+            </div>
+
+            <div class="app-card">
+
+                <div class="app-icon">A</div>
+
+                <div class="app-info">
+                    <span class="category">AI • GAME DEVELOPMENT</span>
+
+                    <h3>THE ADOP</h3>
+
+                    <p>
+                        An AI-powered game development tool designed
+                        to turn ideas and stories into game projects.
+                    </p>
+
+                    <div class="app-buttons">
+                        <button class="card-btn"
+                            onclick="showMessage('THE ADOP download will be available soon!')">
+                            Download
+                        </button>
+
+                        <button class="card-btn outline"
+                            onclick="showMessage('THE ADOP information page is coming soon!')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STORE -->
+        <section class="section" id="store">
+
+            <div class="section-heading">
+                <p>SHOP</p>
+                <h2>MIND MOVE Store</h2>
+                <span>Games, apps and digital products.</span>
+            </div>
+
+            <div class="store-grid">
+
+                <article class="product">
+                    <div class="product-icon">🎮</div>
+
+                    <span class="category">GAME</span>
+
+                    <h3>Island Survival</h3>
+
+                    <p>Coming Soon</p>
+
+                    <button onclick="showMessage('This product is not available yet.')">
+                        Coming Soon
+                    </button>
+                </article>
+
+
+                <article class="product">
+                    <div class="product-icon">🤖</div>
+
+                    <span class="category">APP</span>
+
+                    <h3>THE ADOP</h3>
+
+                    <p>Coming Soon</p>
+
+                    <button onclick="showMessage('THE ADOP will be available soon.')">
+                        Coming Soon
+                    </button>
+                </article>
+
+
+                <article class="product">
+                    <div class="product-icon">✨</div>
+
+                    <span class="category">DIGITAL</span>
+
+                    <h3>Future Products</h3>
+
+                    <p>Coming Soon</p>
+
+                    <button onclick="showMessage('More products are coming soon.')">
+                        Coming Soon
+                    </button>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="section about-section" id="about">
+
+            <div class="about-content">
+
+                <p class="small-title">ABOUT US</p>
+
+                <h2>Ideas become<br><span>experiences.</span></h2>
+
+                <p>
+                    MIND MOVE is an independent creative technology
+                    brand focused on games, applications and digital
+                    experiences.
+                </p>
+
+                <p>
+                    Our goal is simple — take creative ideas and
+                    turn them into something people can experience.
+                </p>
+
+            </div>
+
+            <div class="about-box">
+                <strong>MIND</strong>
+                <span>+</span>
+                <strong>MOVE</strong>
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="section contact-section" id="contact">
+
+            <div class="section-heading">
+                <p>GET IN TOUCH</p>
+                <h2>Contact MIND MOVE</h2>
+                <span>Have an idea? Let's build something.</span>
+            </div>
+
+            <div class="contact-box">
+
+                <input type="text" id="name" placeholder="Your Name">
+
+                <input type="email" id="email" placeholder="Your Email">
+
+                <textarea id="message" rows="5"
+                    placeholder="Your Message"></textarea>
+
+                <button class="btn primary" onclick="sendMessage()">
+                    Send Message
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            MIND MOVE
+        </div>
+
+        <p>Think. Create. Move.</p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#apps">Apps</a>
+            <a href="#store">Store</a>
+            <a href="#about">About</a>
+        </div>
+
+        <div class="copyright">
+            © 2026 MIND MOVE. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- MESSAGE POPUP -->
+    <div class="popup" id="popup">
+        <div class="popup-box">
+            <div class="popup-icon">✓</div>
+            <p id="popupText"></p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
