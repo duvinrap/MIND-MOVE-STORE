@@ -4,37 +4,105 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MIND MOVE — Games, Apps & Digital Store</title>
-<meta name="description"
-content="MIND MOVE is a creative technology brand building games, apps and digital experiences — including THE ADOP, an AI-powered game development tool.">
-<meta name="keywords"
-content="Mind Move, games, apps, AI, game development, digital store">
+<meta name="description" content="MIND MOVE is a creative technology brand building games, apps and digital experiences — including THE ADOP, an AI-powered game development tool.">
+<meta name="keywords" content="Mind Move, MIND MOVE STORE, games, apps, AI, game development, digital store">
 <meta name="robots" content="index, follow">
-
-<!-- SEO: Open Graph tags for better search & social preview -->
-<meta property="og:title" content="MIND MOVE — Games, Apps & Digital Store">
-<meta property="og:description" content="MIND MOVE builds games, apps and digital experiences — including THE ADOP, an AI-powered game development tool. Download it now.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://mind-move-store.vercel.app">
 <link rel="canonical" href="https://mind-move-store.vercel.app">
 
-<!-- 
-  GOOGLE SEARCH CONSOLE VERIFICATION:
--->
+<!-- ===== GOOGLE LOGO FIX ===== -->
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/mindmove-icon-192.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/mindmove-icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/icons/mindmove-icon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/mindmove-icon-192.png">
+<meta property="og:title" content="MIND MOVE — Games, Apps & Digital Store">
+<meta property="og:description" content="MIND MOVE builds games, apps and digital experiences — including THE ADOP, an AI-powered game development tool.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mind-move-store.vercel.app">
+<meta property="og:image" content="https://mind-move-store.vercel.app/icons/mindmove-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:site_name" content="MIND MOVE">
+<meta name="theme-color" content="#07070a">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"MIND MOVE","url":"https://mind-move-store.vercel.app","logo":"https://mind-move-store.vercel.app/icons/mindmove-icon-512.png"}</script>
+<!-- ===== FIX END ===== -->
+
 <meta name="google-site-verification" content="3Nc3ZvkrgNF6nOUacML8k1WzEAUYi_qRg_tfidN_1Lo" />
-
-<!-- GOOGLE ADSENSE -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5896211439234079"
-     crossorigin="anonymous"></script>
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5896211439234079" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
 <link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#07070a">
-<link rel="icon" href="icons/mindmove-icon-192.png">
-
-<!-- Google Fonts: Space Grotesk for app-listing headings -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+/* UN ORIGIN STYLE - FULL SAME */
+.playcard{background:#16161B;border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:28px;max-width:720px;margin:0 auto}
+.playcard-top{display:flex;gap:18px;align-items:flex-start}
+.playcard-icon{flex-shrink:0;width:76px;height:76px;border-radius:18px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.playcard-icon img{width:100%;height:100%;object-fit:cover;display:block}
+.playcard-meta h3{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;margin:0 0 2px 0;color:#fff}
+.howto-grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.howto-step{background:#16161B;border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:22px 18px}
+.howto-num{width:32px;height:32px;border-radius:50%;background:linear-gradient(145deg,#6C5CE7,#4834D4);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;margin-bottom:12px}
+.welcome-voice{position:fixed;left:16px;bottom:16px;z-index:999;background:#16161B;border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:14px 16px;max-width:260px}
+body{background:radial-gradient(circle at 12% 0%,rgba(108,92,231,0.14),transparent 42%),radial-gradient(circle at 88% 15%,rgba(72,52,212,0.12),transparent 45%),#07070a!important;background-attachment:fixed}
+.site-frame-border{position:fixed;inset:8px;border:1px solid rgba(255,255,255,0.06);border-radius:22px;pointer-events:none;z-index:9998}
+</style>
+</head>
+<body>
+<div class="site-frame-border"></div>
+<header class="navbar">
+<a href="#home" class="logo">MIND <span>MOVE</span></a>
+<button class="menu-btn" id="menuBtn">☰</button>
+<nav id="navMenu">
+<a href="#home">Home</a><a href="#games">Games</a><a href="#howto">How to Use</a><a href="#apps">Apps</a><a href="#store">Store</a><a href="#about">About</a><a href="#creator">Creator</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+<button id="installAppBtn" onclick="installMindMoveApp()" style="display:none;background:#6C5CE7;color:#fff;border:none;padding:8px 16px;border-radius:100px;font-weight:600">📲 Install App</button>
+</nav>
+</header>
 
+<div class="welcome-voice" id="welcomeVoice">
+<button class="welcome-voice-close" id="welcomeVoiceClose">✕</button>
+<p class="welcome-voice-title">👋 Hear a welcome message from Duvin</p>
+<div class="welcome-voice-row">
+<button class="welcome-voice-btn" id="welcomeVoicePlay">▶ Play</button>
+<button class="welcome-voice-lang active" id="welcomeVoiceEn">EN</button>
+<button class="welcome-voice-lang" id="welcomeVoiceTa">தமிழ்</button>
+</div>
+<audio id="welcomeAudio" preload="none"></audio>
+</div>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-content">
+<p class="eyebrow">WELCOME TO MIND MOVE</p>
+<h1>THINK.<br>CREATE.<br><span>MOVE.</span></h1>
+<p class="hero-text">Games, apps and digital experiences created with imagination and technology.</p>
+<div class="hero-buttons"><a href="#games" class="btn primary">Explore Games</a><a href="#store" class="btn secondary">Open Store</a></div>
+</div>
+<div class="brand-card"><div class="brand-mark">M</div><h2>MIND MOVE</h2><p>GAMES • APPS • DIGITAL</p></div>
+</section>
+
+<section class="search-section"><div class="search-box"><span>⌕</span><input type="text" id="searchInput" placeholder="Search games, apps or products..."></div></section>
+
+<section class="section dark" id="howto">
+<div class="section-heading"><p>QUICK GUIDE</p><h2>How to Use This Site</h2><span>Get started in a few simple steps.</span></div>
+<div class="howto-grid">
+<div class="howto-step"><div class="howto-num">1</div><h4>Browse</h4><p>Explore Games, Apps and the Store from the menu above</p></div>
+<div class="howto-step"><div class="howto-num">2</div><h4>Get THE ADOP</h4><p>Tap Download to install or open in browser</p></div>
+<div class="howto-step"><div class="howto-num">3</div><h4>Leave a Review</h4><p>Share your experience with other users</p></div>
+<div class="howto-step"><div class="howto-num">4</div><h4>Support the Work</h4><p>Support to buy developer a coffee</p></div>
+</div>
+</section>
+
+<section class="section" id="games">
+<div class="section-heading"><p>DISCOVER</p><h2>Games</h2><span>Stories that become worlds.</span></div>
+<div class="product-grid" id="gamesGrid">
+<article class="product-card searchable" data-name="Island Survival"><div class="product-visual survival"><span>COMING SOON</span></div><div class="product-body"><small>GAME • SURVIVAL • ADVENTURE</small><h3>Island Survival</h3><p>Four friends. One mysterious island. Survive the dangers and find a way home.</p><button onclick="showMessage('Island Survival is coming soon!')">Coming Soon</button></div></article>
+</div>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
 <style>
 /* ===== Play Store style app listing card ===== */
 .playcard {
